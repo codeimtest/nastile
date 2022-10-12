@@ -168,6 +168,16 @@ footer .contact-widget-item img{
 .works-margin {
 	padding-top: 382px;
 }
+.featured-item{
+	margin-bottom: 50px;
+	z-index: 2;
+}
+.featured-item p{
+	margin-top: 0;
+}
+.featured-item-title{
+	height: auto;
+}
 footer .contact-widget-item a{
 	line-height: 35px;
 	font-size: 20px;
@@ -277,6 +287,12 @@ marquee{
 @media (max-width : 576px) {
 	.special-title h2{
 		font-size: 26px;
+	}
+	.popup .popup-dialog .popup-wrap{
+		padding: 20px;
+	}
+	.popup-wrap form input::placeholder{
+		font-size: 11px;
 	}
 	h1{
 		font-size: 31px;
