@@ -55,3 +55,20 @@ $(window).scroll(function() {
 		$("header").removeClass("toggle-header");
 	}
 }); //missing );
+
+
+$('.contact').click(function(e){
+	$('.for-contact').addClass('active');
+	$('body').addClass('lock');
+	e.preventDefault();
+});
+
+$('.btn-close').click(function(){
+	if ($(this).parent().parent().parent().hasClass("active")) {
+		$(this).parent().parent().parent().removeClass("active");
+		$('body').removeClass('lock');
+	} else {
+		$('body').removeClass('lock');
+	}
+	
+})
