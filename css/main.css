@@ -61,8 +61,8 @@ body {
 	display: inline-block;
 }
 .main-btn:hover{
-	opacity: 0.8;
-	color: var(--text);
+	background: #2D3548;
+	color: #fff;
 }
 .large-btn{
 	min-width: 300px;
@@ -772,7 +772,9 @@ footer .contact-widget-item:nth-child(2),footer .contact-widget-item:nth-child(4
 	background: #171923;
 }
 .black:hover{
-	color: #fff;
+	background: #fff;
+	color: #171923;
+	border: 3px solid #2C3447;
 }
 .bordered{
 	background: #fff;
