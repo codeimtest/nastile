@@ -72,3 +72,10 @@ $('.btn-close').click(function(){
 	}
 	
 })
+$(document).mouseup(function (e) {
+	var container = $(".popup-dialog");
+	if (container.has(e.target).length === 0){
+			$('.popup').removeClass('active');
+	}
+});
+$(".phone").mask("+7(999) 999-9999");

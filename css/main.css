@@ -29,7 +29,7 @@
 ::selection { background-color: var(--accent); color: #fff; }
 input, textarea { outline: none; }
 input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
-input:required:valid, textarea:required:valid { border-color: green; }
+input:required:valid, textarea:required:valid { border-color: #fff; }
 
 body {
 	font-family: var(--userfont);
@@ -1074,12 +1074,18 @@ marquee{
 	justify-content: center;
 	z-index: 1;
 	cursor: pointer;
+	transition: 0.2s ease all;
+}
+.btn-close:hover span::after,.btn-close:hover span::before{
+	background: #fff;
+	transition: 0.2s ease all;
 }
 .btn-close span {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: 0.2s ease all;
 }
 .btn-close span::after,.btn-close span::before{
 	content: '';
