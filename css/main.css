@@ -216,6 +216,10 @@ header .main-btn{
 	justify-content: space-between;
 	align-items: center;
 }
+.main-nav ul li a{
+	font-family: intro;
+	font-size: 14px;
+}
 .main-nav ul li a,.f-nav ul li a{
 	color: #fff;
 	text-decoration: none;
