@@ -79,3 +79,6 @@ $(document).mouseup(function (e) {
 	}
 });
 $(".phone").mask("+7(999) 999-9999");
+// Vanilla JavaScript
+
+

@@ -464,11 +464,14 @@ header .main-btn{
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 20px;
+	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
 }
 .services-item:hover{
 	color: #fff;
 
 }
+
 .services-item:hover::after{
 	transform: scaleX(1);
   transform-origin:0 50%;
@@ -1221,4 +1224,13 @@ section.testimonials::before{
 }
 .certificate .additional-lines{
 	background: url('../images/cert-lines.png') no-repeat;
+}
+#jarallax-container-0 > div{
+	background-position: right top !important;
+	background-size: 69% !important;
+}
+
+.boxed {
+	box-shadow: 0px 4px 4px rgb(45 53 72 / 24%);
+	backdrop-filter: blur(2px);
 }
