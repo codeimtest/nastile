@@ -905,7 +905,7 @@ section.testimonials {
 	top:0;
 }
 marquee{
-	color: #fff;
+	color: transparent;
 	-webkit-text-stroke: 1px #C3D62F;
 	font-size: 120px;
 	line-height: 175px;
@@ -1123,11 +1123,11 @@ body.lock{
 .works-section::after {
 	content: '';
 	width: 100%;
-	height: 75%;
+	height: 99%;
 	position: absolute;
 	background-repeat: no-repeat;
 	background-color: #171923;
-	clip-path: polygon(0.00% 23.94%,100.00% 11.03%,100.00% 81%,0% 100%);
+	clip-path: polygon(0.00% 21.94%,100% 12.03%,100% 85%,0% 94%);
 	top: 0;
 	z-index: -2;
 	left: 0;
@@ -1182,6 +1182,7 @@ body.lock{
 .certificate {
 	position: relative;
 	z-index: 0;
+	overflow: hidden;
 }
 .certificate .additional-lines{
 	

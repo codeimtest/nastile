@@ -130,10 +130,17 @@ section.testimonials::before{
 	top: 0;
 	background: #fff;
 }
+footer .logo img {
+	width: 44%;
+	margin: 0;
+}
 }
 
 /* md <= Large (lg) */
 @media (max-width : 992px) {
+	footer .logo img{
+		width: 130px;
+	}
 	.logo img {
     width: 58%;
     margin: 0 auto;
@@ -262,10 +269,25 @@ marquee{
 	text-align: left;
 	font-size: 16px;
 }
+.first-page h1{
+	text-align: center;
+}
+.first-page p{
+	text-align: center;
+}
+.certificate-card-bg{
+	order: 0;
+}
+.certificate-card-about{
+	order: 1;
+}
 }
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
+	p{
+		font-size: 18px;
+	}
 	.certificate-card-about {
     padding: 22px 19px;
 }
@@ -281,10 +303,17 @@ marquee{
 .about-video{
 	min-height: 341px;
 }
+
 }
 
 /* xs <= Small (sm) */
 @media (max-width : 576px) {
+	.sign-text img{
+		margin-left: 0;
+	}
+	.services-item h4{
+		font-size: 12px;
+	}
 	.special-title h2{
 		font-size: 26px;
 	}
@@ -303,6 +332,13 @@ marquee{
 	}
 	.first-outer {
     background-position-x: 445px;
+}
+.first-page p{
+	font-size: 16px;
+}
+.btn-close{
+	right: 5px;
+	top: 10px;
 }
 }
 
