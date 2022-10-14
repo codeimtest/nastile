@@ -395,7 +395,9 @@ header .main-btn{
 .white-text .reveal-holder .reveal-block {
 	background: #2C3447;
 }
-
+footer .contact-widget-item img{
+	width: 28px;
+}
 .reveal-holder .reveal-block::before{
 	background: #171923;
 }
