@@ -997,7 +997,7 @@ marquee{
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background-position-y: 36%;
+	/*background-position-y: 36%;*/
 }
 .active.popup {
 	opacity: 1;
@@ -1193,7 +1193,7 @@ body.lock{
 }
 .works-section .additional-lines{
 	position: absolute;
-	background-position-y: 74%;
+	/*background-position-y: 74%;*/
 	z-index: -1;
 	bottom: 0;
 }
