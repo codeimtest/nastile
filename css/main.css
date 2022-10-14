@@ -98,7 +98,7 @@ h5{
 }
 .special-title{
 	margin-bottom: 50px;
-	display: inline-block;
+
 }
 .alt-special-title{
 	margin-bottom: 40px;
@@ -379,6 +379,65 @@ header .main-btn{
 	-webkit-transition: -webkit-transform .3s ease-out .3s;
 	transition: transform .3s ease-out .3s;
 }
+/* Reveal block */
+.reveal-holder {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.reveal-holder .reveal-block {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 101%;
+  background: #fff;
+}
+.white-text .reveal-holder .reveal-block {
+	background: #2C3447;
+}
+
+.reveal-holder .reveal-block::before{
+	background: #171923;
+}
+.white-text .reveal-block::before{
+	background: #fff;
+}
+ .reveal-block::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	transition-property: transform;
+	transition-duration: 0.5s;
+}
+
+[data-aos="reveal-right"]{
+	transform: scaleX(1);
+	transform-origin: 100% 0%;
+	transition-property: transform;
+	transition-delay: 0.5s;
+}
+[data-aos="reveal-right"].aos-animate{
+	transform: scaleX(0);
+}
+.reveal-block.right::before{
+	transform: scaleX(0);
+	transform-origin: 0 100%;
+}
+.reveal-block.right.aos-animate::before{
+	transform: scaleX(1);
+}
+[data-aos="reveal-item"]{
+	visibility: hidden;
+	transition-property: visibility;
+	transition-duration: 0s;
+}
+[data-aos="reveal-item"].aos-animate{
+	visibility: visible;
+}
 .services{
 	position: relative;
 	clip-path: polygon(0.00% 23.94%,100.00% 11.03%,100.00% 99.38%,0.00% 100%);
@@ -400,43 +459,17 @@ header .main-btn{
 .matrix-title-wrap{
 	position: relative;
 }
-.pre_appear span {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.matrix-title:not(.pre_appear) {
-  position: relative;
-  display: inline-block;
-}
-.matrix-title:not(.pre_appear) span {
-  opacity: 0;
-  visibility: hidden;
-  animation: appear_text 0.00001s linear forwards;
-  animation-delay: 0.7s;
-}
-.white-text .matrix-title:not(.pre_appear):after{
-	background: #fff;
-}
-.matrix-title:not(.pre_appear):after {
-  content: "";
-  top: 0;
-  left: 0;
-  position: absolute;
-  background: #000;
-  display: block;
-  width: 0%;
-  height: 100%;
-  animation: appear_block 1.7s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-}
 
 .special-title{
 	position: relative;
 	padding-left: 50px;
 }
 .special-title h2{
-	margin-bottom: 20px;
+	margin-bottom: 0;
 	line-height: inherit;
+}
+.special-title .reveal-holder{
+	margin-bottom: 20px;
 }
 .special-title h5{
 	margin-bottom: 0;
@@ -505,30 +538,7 @@ header .main-btn{
 	font-size: 18px;
 }
 
-@keyframes appear_block {
-  0% {
-    left: 0;
-    width: 0%;
-  }
-  50% {
-    left: 0;
-    width: 100%;
-  }
-  100% {
-    left: 100%;
-    width: 0%;
-  }
-}
-@keyframes appear_text {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    opacity: 1;
-    visibility: visible;
-  }
-}
+
 
 .works{
 	min-height: 300px;
