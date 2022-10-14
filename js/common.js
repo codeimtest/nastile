@@ -37,9 +37,22 @@ $(document).mouseup(function (e) {
 	var container = $(".popup-dialog");
 	if (container.has(e.target).length === 0){
 			$('.popup').removeClass('active');
+			$('body').removeClass('lock');
 	}
 });
 $(".phone").mask("+7(999) 999-9999");
-// Vanilla JavaScript
+
+$('.get-video').magnificPopup({
+	delegate: 'a',
+	type: 'iframe',
+	closeOnContentClick: false,
+	closeBtnInside: false,
+	mainClass: 'mfp-with-zoom mfp-img-mobile',
+	image: {
+			verticalFit: true,
+	},
+
+
+}); 
 
 
