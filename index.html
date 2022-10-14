@@ -24,7 +24,7 @@
 	
 	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
 	<script src="libs/input-mask/jquery.maskedinput.min.js" defer></script>
-	<script src="libs/simple-parallax/simpleParallax.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/paroller.js/dist/jquery.paroller.min.js" defer></script>
 	<script src="libs/aos/aos.js" defer></script>
 	<script src="libs/Magnific-Popup/dist/jquery.magnific-popup.min.js" defer></script>
 	<script src="js/common.js" defer></script>
@@ -108,7 +108,7 @@
 				<div class="row">
 					<div class="col-lg-8 col-xxl-6">
 						<div class="first-page-title white-text">
-							<h1>Лаборатория <span>детейлинга</span> Nastile Projekt</h1>
+							<h1>Лаборатория <span>детейлинга</span> <br>Nastile Projekt</h1>
 							<p>Защитные покрытия и тотальный уход<br>
 								премиального качества для вашего авто</p>
 							<a href="#" class="main-btn large-btn contact">Записаться</a>
@@ -118,6 +118,9 @@
 			</div>
 		</div>
 		<div class="featured">
+			<div class="featured-bg parallax" data-paroller-factor="-0.05" 
+			data-paroller-type="foreground"
+			data-paroller-direction="vertical" style="background: url(../images/featured-lines.png), linear-gradient(171.3deg, rgba(36, 41, 53, 0) 38.37%, #191D2A 65%) ;"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3">
@@ -194,42 +197,50 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-6">
-					<a href="#" class="services-item" style="background-image: url('images/anti-grav.jpg');">
+					<a href="#" class="services-item" style="background: url('images/anti-grav.jpg');">
+						<div class="overlay-service"></div>
 						<h4>Антигравийная защита</h4>
 					</a>
 				</div>
 				<div class="col-lg-3 col-6">
-					<a href="#" class="services-item" style="background-image: url('images/bron.jpg');">
+					<a href="#" class="services-item" style="background: url('images/bron.jpg');">
+						<div class="overlay-service"></div>
 						<h4>Бронирование стёкол</h4>
 					</a>
 				</div>
 				<div class="col-lg-3 col-6">
-					<a href="#" class="services-item" style="background-image: url('images/tonir.jpg');">
+					<a href="#" class="services-item" style="background: url('images/tonir.jpg');">
+						<div class="overlay-service"></div>
 						<h4>Тонировка</h4>
 					</a>
 				</div>
 				<div class="col-lg-3 col-6">
-					<a href="#" class="services-item" style="background-image: url('images/bron-far.jpg');">
+					<a href="#" class="services-item" style="background: url('images/bron-far.jpg');">
+						<div class="overlay-service"></div>
 						<h4>Бронирование фар</h4>
 					</a>
 				</div>
 				<div class="col-lg-3 col-6">
-					<a href="#" class="services-item" style="background-image: url('images/polir.jpg');">
+					<a href="#" class="services-item" style="background: url('images/polir.jpg');">
+						<div class="overlay-service"></div>
 						<h4>Полировка</h4>
 					</a>
 				</div>
 				<div class="col-lg-3 col-6">
-					<a href="#" class="services-item" style="background-image: url('images/himch.jpg');">
+					<a href="#" class="services-item" style="background: url('images/himch.jpg');">
+						<div class="overlay-service"></div>
 						<h4>Химчистка</h4>
 					</a>
 				</div>
 				<div class="col-lg-3 col-6">
-					<a href="#" class="services-item" style="background-image: url('images/brand.jpg');">
+					<a href="#" class="services-item" style="background: url('images/brand.jpg');">
+						<div class="overlay-service"></div>
 						<h4>Брендирование</h4>
 					</a>
 				</div>
 				<div class="col-lg-3 col-6">
-					<a href="#" class="services-item" style="background-image: url('images/moyka.jpg');">
+					<a href="#" class="services-item" style="background: url('images/moyka.jpg');">
+						<div class="overlay-service"></div>
 						<h4>Детейлинг-мойка</h4>
 					</a>
 				</div>
@@ -291,7 +302,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="additional-lines jarallax"></div>
+		<div class="additional-lines parallax" data-paroller-factor="-0.2" 
+		data-paroller-type="foreground"
+		data-paroller-direction="vertical"></div>
 		<marquee direction="left" scrolldelay="20">NASTILE PROJEKT NASTILE PROJEKT NASTILE PROJEKT NASTILE PROJEKT NASTILE PROJEKT NASTILE PROJEKT</marquee>
 	</section>
 
@@ -342,7 +355,9 @@
 
 
 	<section class="certificate">
-		<div class="additional-lines jarallax"></div>
+		<div class="additional-lines parallax" data-paroller-factor="-0.1" 
+		data-paroller-type="foreground"
+		data-paroller-direction="vertical"></div>
 		<div class="sertificate-section">
 			<div class="container">
 				<div class="row">
@@ -442,8 +457,8 @@
 							</div>
 						</div>
 						<div class="btn-group">
-							<a href="#" class="main-btn black align-right large-btn">Построить маршрут</a>
-							<a href="#" class="main-btn bordered large-btn">Схема проезда</a>
+							<a target="_blank" href="https://yandex.ru/maps/org/deteyling_okleyka_avto_nastile_projekt/13706213789/?ll=37.994554%2C55.912276&z=18.24" class="main-btn black align-right large-btn">Построить маршрут</a>
+							<a href="#" class="main-btn bordered large-btn to-map">Схема проезда</a>
 						</div>
 					</div>
 				</div>
@@ -538,6 +553,19 @@
 					<button type="submit" class="green-btn large-btn">Отправить</button>
 					<p>Нажимая кнопку "Отправить", вы соглашаетесь с условиями пользования сайта.</p>
 				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popup for-map">
+		<div class="popup-dalog">
+			<div class="popup-wrap">
+				<div class="btn-close">
+					<span></span>
+				</div>
+				<h2>
+					Схема проезда
+				</h2>
+				<img src="images/scheme-map.jpg" alt="Схема проезда">
 			</div>
 		</div>
 	</div>

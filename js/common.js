@@ -4,6 +4,7 @@ AOS.init({
 	once: true
 });
 
+
 //toggle header
 $(window).scroll(function() {    
 	var scroll = $(window).scrollTop();
@@ -23,6 +24,11 @@ $('.contact').click(function(e){
 	$('body').addClass('lock');
 	e.preventDefault();
 });
+$('.to-map').click(function(e){
+	$('.for-map').addClass('active');
+	$('body').addClass('lock');
+	e.preventDefault();
+});
 
 $('.btn-close').click(function(){
 	if ($(this).parent().parent().parent().hasClass("active")) {
@@ -31,7 +37,7 @@ $('.btn-close').click(function(){
 	} else {
 		$('body').removeClass('lock');
 	}
-	
+
 })
 $(document).mouseup(function (e) {
 	var container = $(".popup-dialog");
@@ -51,8 +57,6 @@ $('.get-video').magnificPopup({
 	image: {
 			verticalFit: true,
 	},
-
-
 }); 
 
-
+$(".parallax").paroller();
